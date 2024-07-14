@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+}
+
+nav,footer {
+  height: 10vh;
+  padding-left: 10vw;
+  padding-right: 5vw;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Img {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+nav ul li{
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li img{
+  height: 15px;
+}
+
+li:hover {
+  color: rgb(133, 130, 130);
+  cursor: pointer;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.subheading {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.nav-left-text h1,
+.nav-left-text p {
+  margin: 0;
+  line-height: 1;
+  padding: 0;
+}
+
+.boxes{
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  place-content: center;
+}
+
+.box{
+  box-sizing: border-box;
+  height: 130px;
+  width: 200px;
+  background-color: #f9f9f9;
+  padding-top: 15px;
+  padding-bottom: 1vh;
+  font-weight: 600;
+  font-size: large;
+  line-height: 1.3em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.small{
+  font-weight: 100;
+  font-size: 80%;
+  align-items: center;
+}
+
+.big{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Link{
+  height: auto;
+  width:fit-content;
+  padding: 8px 15px !important;
+  background-color: rgb(53, 161, 53);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+@media only screen and (max-width: 1000px) {
+  .boxes{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* heading  */
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65vw;
+  margin: 50px auto;
+  text-align: center;
+  row-gap: 28px;
+  font-size: x-large;
+}
+
+.H1{
+  display: flex;
+  align-items: center;
+}
+.button{
+  padding: 12px;
+  color: white;
+  background-color: rgb(25, 122, 250);
+  border-radius: 5px;
+  border: none;
+  width:max-content;
+  margin: auto;
+}
+.button:hover{
+  cursor: pointer;
+}
+.main2{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+/* black background */
+.black{
+  background-color: #222;
+  color: white;
+  margin: 50px 0px;
+  padding: 60px 0px;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  row-gap: 75px;
+}
+.t1{
+  column-gap: 105px;
+  display: flex;
+  align-items: center;
+  width:63vw;
+  margin: auto;
+  text-align: center;
+}
+.email{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  border-radius: 10px;
+  width: 32vw;
+}
+.email2{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+.email2> label{
+  color: black;
+  font-size: small;
+  margin: auto;
+}
+.smallt{
+  font-size: medium;
+}
+.black> :nth-child(2){
+  align-self: flex-start;
+  margin: auto;
+  width: 63vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.getUltra{
+  text-decoration: none;
+  color: rgb(35, 193, 198);
+}
+
+footer{
+  padding: 0 18vw;
+}
+footer> :nth-child(2){
+  display: flex;
+  column-gap: 15px;
+}
+.copyright{
+  margin-left: 18vw;
+  margin-bottom: 6vh;
+}
+.fa-brands{
+  font-size: 25px;
+  color: #222;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main{
+    font-size: large;
+    width: 95vw;
+  }
+  .main2{
+    align-self: center;
+  }
+  nav{
+    padding-left: 6vw;
+  }
+  nav> ul{
+    display:none;
+  }
+  .nav-left, nav>.Img{
+    font-size: small;
+  }
+
+  .black{
+    font-size: larger;
+  }
+  .t1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 95vw;
+  }
+  .email{
+    width: 80vw;
+    max-width: 400px;
+  }
+  .black> :nth-child(2){
+    text-align:left;
+    width: 95vw;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
